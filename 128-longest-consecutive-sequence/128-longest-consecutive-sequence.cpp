@@ -15,11 +15,11 @@ public:
                 continue;
             }
             else{
-                int k = nums[i];
-                int q = 1;
-                while(ump.find(k+1)!=ump.end()){
-                    ans = max(ans, ++q);
-                    ++k;
+                int number_tofind = nums[i];
+                int current_sequence = 1;
+                while(ump.find(number_tofind+1)!=ump.end()){
+                    ans = max(ans, ++current_sequence);
+                    ++number_tofind;
                 }
             }
         }
