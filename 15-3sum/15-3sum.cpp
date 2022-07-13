@@ -25,9 +25,7 @@ public:
                     ++l;
                     --r;
                 }
-            }
-            
-            
+            }  
         }
         return ans;
     }
