@@ -7,12 +7,12 @@ public:
                stk.push(stoi(i));
            }
            else{
-               auto a= stk.top(); stk.pop();
                auto b= stk.top(); stk.pop();
-               if(i=="+"){stk.push(b+a);}
-               if(i=="-"){stk.push(b-a);}
-               if(i=="*"){stk.push(b*a);}
-               if(i=="/"){stk.push(b/a);}
+               auto a= stk.top(); stk.pop();
+               if(i=="+"){stk.push(a+b);}
+               if(i=="-"){stk.push(a-b);}
+               if(i=="*"){stk.push(a*b);}
+               if(i=="/"){stk.push(a/b);}
            }
        }
         return stk.top();
